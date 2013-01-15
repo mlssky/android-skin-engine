@@ -11,6 +11,7 @@ SkinEngineDemo是一个简单的应用程序，使用了SkinEngine皮肤引擎�
 1、将编译打包好的皮肤资源包SkinEngineDemoSkin.apk放在“/mnt/sdcard/SkinEngineDemo/”目录下。
 
 2、运行SkinEngineDemo，它有3个页面，可以先简单浏览、点击各个页面的控件，看看程序外观展示。注意先不要点击“click to change skin”换肤按钮。
+
 http://android-skin-engine.googlecode.com/files/SkinEngineDemo-p1.png
 http://android-skin-engine.googlecode.com/files/SkinEngineDemo-p2.png
 
