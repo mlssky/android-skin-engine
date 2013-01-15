@@ -1,0 +1,30 @@
+#labels Featured,Phase-Requirements,Phase-Design,Phase-Implementation
+=概述=
+Android开发框架提供了主题机制，可以让应用程序根据配置展示不同的外观。但依靠主题并不能实现完美的换肤，它有以下不足：（1）皮肤资源必须和主程序一起打包，增加了应用程序的体积，使得皮肤不能无限扩展，不能动态添加。（2）不能动态换肤。应用主题有两种方法，一是在manifest文件中配置，二是在activity创建之前通过代码设置。无法实现运行后动态选择皮肤。
+
+SkinEngine项目的目标是开发一个简单易用的皮肤引擎，让android应用程序方便的实现换肤功能。和android主题机制类似，SkinEngine以样式属性资源的名字为标识，关联皮肤资源。但区别在于，SkinEngine关联的资源存在于主程序外部的独立apk包里，主程序不需要知道外部皮肤的存在；皮肤资源可以后续无限扩展，不需要预先打包在主程序中，不会增加主程序安装包大小。另外，SkinEngine支持运行时动态换肤。
+
+=示例=
+请先下载示例程序SkinEngineDemo及其皮肤资源包程序SkinEngineDemoSkin。
+SkinEngineDemo是一个简单的应用程序，使用了SkinEngine皮肤引擎库。SkinEngineDemoSkin是它的皮肤工程，皮肤资源打包在SkinEngineDemoSkin.apk中。
+
+1、将编译打包好的皮肤资源包SkinEngineDemoSkin.apk放在“/mnt/sdcard/SkinEngineDemo/”目录下。
+
+2、运行SkinEngineDemo，它有3个页面【图3】，可以先简单浏览、点击各个页面的控件，看看程序外观展示。注意不要点击“click to change skin”换肤按钮。
+
+3、进行换肤。从主页面点击“go to activity: change skin”按钮跳转到换肤页面，点击“click to change skin”，会从SkinEngineDemoSkin.apk中获取皮肤资源，执行换肤操作。可以看到SkinEngineDemo程序的外观发生改变（无论是新打开的页面还是换肤操作前已经存在的页面），按钮按下态、字体、图片、复选框、列表按下态等从原程序的蓝色调资源改变为皮肤包里绿色调的资源。
+
+=使用方法=
+1、编写你的android应用程序，在布局文件中以赋值为样式属性(style attributes)的方式标识需要进行换肤的控件的属性，定义好相关的主题、属性，确保你的程序可以正常运行。
+
+2、编写皮肤资源包程序。把皮肤资源按照正常android应用程序结构组织。主程序将主题中定义的样式属性名字为映射依据，找到皮肤资源程序里的主题中定义样式属性的值，作为替换皮肤资源。
+
+3、主程序引用皮肤引擎库skin.jar。
+
+4、在主程序启动时（一般是在Application子类里），初始化皮肤引擎SkinEngine。【代码】。如果主程序主题里定义了控件的默认样式，并且这些默认样式的property有被赋值为style attributes的，则需要动态告知皮肤引擎。
+
+5、让主程序的activity继承自皮肤引擎公开的SkinWrapperActivity类。
+
+6、如果某个activity会在换肤动作发生前就存在，并且在换肤事件发生后，需要即时响应更改外观的（通常是在软件里通往换肤触发页面的路径上的activity），则需要在该activity的onCreate方法中调用enableResponseOnSkinChangeEvent(true);
+
+7、在主程序里设计换肤功能触发入口，在该处调用SkinEngine.getInstance().setSkinApk(apkPath);实现换肤。
