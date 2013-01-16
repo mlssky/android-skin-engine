@@ -5,17 +5,18 @@ Android开发框架提供了主题机制，可以让应用程序根据配置展�
 SkinEngine项目的目标是开发一个简单易用的皮肤引擎，让android应用程序方便的实现换肤功能。和android主题机制类似，SkinEngine以样式属性资源的名字为标识，关联皮肤资源。但区别在于，SkinEngine关联的资源存在于主程序外部的独立apk包里，主程序不需要知道外部皮肤的存在；皮肤资源可以后续无限扩展，不需要预先打包在主程序中，不会增加主程序安装包大小。另外，SkinEngine支持运行时动态换肤。
 
 =示例程序=
-请先下载示例程序SkinEngineDemo及其皮肤资源包程序SkinEngineDemoSkin。
-SkinEngineDemo是一个简单的应用程序，使用了SkinEngine皮肤引擎库。SkinEngineDemoSkin是它的皮肤工程，皮肤资源打包在SkinEngineDemoSkin.apk中。
+请先下载示例程序[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]及其皮肤资源包程序[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin.7z SkinEngineDemoSkin]。
+[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]是一个简单的应用程序，使用了SkinEngine皮肤引擎库。[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin.7z SkinEngineDemoSkin]是它的皮肤工程，皮肤资源打包在SkinEngineDemoSkin.apk中。
 
 1、将编译打包好的皮肤资源包SkinEngineDemoSkin.apk放在“/mnt/sdcard/SkinEngineDemo/”目录下。
 
-2、运行SkinEngineDemo，它有3个页面，可以先简单浏览、点击各个页面的控件，看看程序外观展示。
+2、运行[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]，它有3个页面，可以先简单浏览、点击各个页面的控件，看看程序外观展示。
 
 http://android-skin-engine.googlecode.com/files/SkinEngineDemoScreenshot-0.png
+
 http://android-skin-engine.googlecode.com/files/SkinEngineDemoScreenshot-1.png
 
-3、进行换肤。从主页面点击跳转到页面1，点击换肤按钮，会从SkinEngineDemoSkin.apk中获取皮肤资源，执行换肤操作。可以看到SkinEngineDemo程序的外观发生改变（无论是以后新打开的页面还是换肤以前已经存在的页面），按钮按下态、字体、图片、复选框、列表按下态等从原程序的蓝色调资源改变为皮肤包里绿色调的资源。
+3、进行换肤。从主页面点击跳转到页面1，点击换肤按钮，会从SkinEngineDemoSkin.apk中获取皮肤资源，执行换肤操作。可以看到[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]程序的外观发生改变（无论是以后新打开的页面还是换肤以前已经存在的页面），按钮按下态、字体、图片、复选框、列表按下态等从原程序的蓝色调资源改变为皮肤包里绿色调的资源。
 
 =使用方法=
 
