@@ -8,7 +8,7 @@ SkinEngine项目的目标是开发一个简单易用的皮肤引擎，让android
 请先下载示例程序[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]及其皮肤资源包程序[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin.7z SkinEngineDemoSkin]。
 [http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]是一个简单的应用程序，使用了SkinEngine皮肤引擎库。[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin.7z SkinEngineDemoSkin]是它的皮肤工程，皮肤资源打包在`SkinEngineDemoSkin.apk`中。
 
-1、将编译打包好的皮肤资源包`SkinEngineDemoSkin.apk`放在`“/mnt/sdcard/SkinEngineDemo/”`目录下。
+1、将编译打包好的皮肤资源包`SkinEngineDemoSkin.apk`放在`“/mnt/sdcard/SkinEngineDemo/”`目录下，无需安装。
 
 2、运行[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]，它有3个页面，可以先简单浏览、点击各个页面的控件，看看程序外观展示。
 
@@ -24,7 +24,7 @@ http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkinScreenshot-1.p
 
 =使用方法=
 
-1、编写你的android应用程序，在布局文件中以赋值为样式属性(style attributes)的方式标识需要进行换肤的控件的属性，定义好相关的主题、属性，确保你的程序可以正常运行。例如：
+1、编写你的android应用程序，在布局文件中以赋值为样式属性(style attributes)的方式标识需要进行换肤的控件的属性，定义好相关的主题、属性，确保你的程序可以正常运行。
 
 {{{
             <TextView
@@ -35,6 +35,7 @@ http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkinScreenshot-1.p
 }}}
 
 2、编写皮肤资源包程序，把皮肤资源按照正常android应用程序结构组织。主程序将主题中定义的样式属性名字为映射依据，找到皮肤资源程序里的主题中定义样式属性的值，作为替换皮肤资源。
+*注意：*在皮肤工程的 res/xml/ 目录下必须存在 skin.xml 文件，并在该文件中描述该皮肤的配置信息。配置信息中resource字段是必须准确填写的此皮肤工程应用的主题资源名称，其他字段信息则可随意。
 
 3、主程序引用皮肤引擎库[http://android-skin-engine.googlecode.com/files/SkinEngine.jar SkinEngine.jar]。
 
