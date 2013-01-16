@@ -44,6 +44,7 @@ http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkinScreenshot-1.p
 		// init the skin engine
 		SkinEngine skinEngine = SkinEngine.getInstance();
 		skinEngine.init(this, R.styleable.AppTheme);
+
 		// add custom default widget styles
 		skinEngine.addWidgetDefaultStyleAttr("Button", "background", R.attr.bg_btn);
 		skinEngine.addWidgetDefaultStyleAttr("Button", "textColor", R.attr.textColorPrimary);
