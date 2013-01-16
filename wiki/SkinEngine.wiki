@@ -71,5 +71,7 @@ SkinEngine.getInstance().setSkinApk(apkPath);
 
 =后续将会完善=
 1、支持的style property完善补全。（目前只支持以下属性View的background，`TextView`的textColor、textSize、button，`ListView`的divider、listSelector，`ImageView`的src。）
+
 2、考虑支持自定义控件的方案。
+
 3、支持代码动态添加换肤的“控件-属性-资源标识”。
