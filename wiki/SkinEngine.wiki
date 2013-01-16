@@ -6,7 +6,7 @@ SkinEngine项目的目标是开发一个简单易用的皮肤引擎，让android
 
 =示例程序=
 请先下载示例程序[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]及其皮肤资源包程序[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin.7z SkinEngineDemoSkin]。
-[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]是一个简单的应用程序，使用了SkinEngine皮肤引擎库。[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin.7z SkinEngineDemoSkin]是它的皮肤工程，皮肤资源打包在SkinEngineDemoSkin.apk中。
+[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]是一个简单的应用程序，使用了SkinEngine皮肤引擎库。[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin.7z SkinEngineDemoSkin]是它的皮肤工程，皮肤资源打包在`SkinEngineDemoSkin.apk`中。
 
 1、将编译打包好的皮肤资源包`SkinEngineDemoSkin.apk`放在`“/mnt/sdcard/SkinEngineDemo/”`目录下。
 
@@ -51,9 +51,9 @@ http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkinScreenshot-1.p
 		skinEngine.addWidgetDefaultStyleAttr("ListView", "listSelector", R.attr.bg_list);
 }}}
 
-5、让主程序的activity继承自皮肤引擎公开的SkinWrapperActivity类。一般来说，应用程序都会有自己的页面基类BaseActivity，那么，让它继承SkinWrapperActivity即可。
+5、让主程序的activity继承自皮肤引擎公开的`SkinWrapperActivity`类。一般来说，应用程序都会有自己的页面基类`BaseActivity`，那么，让它继承`SkinWrapperActivity`即可。
 
-6、如果某个activity会在换肤动作发生前就存在，并且在换肤事件发生后，需要即时响应更改外观的（通常是在软件里通往换肤触发页面的路径上的activity），则需要在该activity的onCreate方法中调用以下方法。
+6、如果某个activity会在换肤动作发生前就存在，并且在换肤事件发生后，需要即时响应更改外观的（通常是在软件里通往换肤触发页面的路径上的`activity`），则需要在该`activity`的`onCreate`方法中调用以下方法。
 
 {{{
 enableResponseOnSkinChangeEvent(true);
