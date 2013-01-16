@@ -16,7 +16,11 @@ http://android-skin-engine.googlecode.com/files/SkinEngineDemoScreenshot-0.png
 
 http://android-skin-engine.googlecode.com/files/SkinEngineDemoScreenshot-1.png
 
-3、进行换肤。从主页面点击跳转到页面1，点击换肤按钮，会从SkinEngineDemoSkin.apk中获取皮肤资源，执行换肤操作。可以看到[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]程序的外观发生改变（无论是以后新打开的页面还是换肤以前已经存在的页面），按钮按下态、字体、图片、复选框、列表按下态等从原程序的蓝色调资源改变为皮肤包里绿色调的资源。
+3、进行换肤。从主页面点击跳转到页面1，点击换肤按钮，会从`SkinEngineDemoSkin.apk`中获取皮肤资源，执行换肤操作。可以看到[http://android-skin-engine.googlecode.com/files/SkinEngineDemo.7z SkinEngineDemo]程序的外观发生改变（无论是以后新打开的页面还是换肤以前已经存在的页面），按钮按下态、字体、图片、复选框、列表按下态等从原程序的蓝色调资源改变为皮肤包里绿色调的资源。
+
+http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkinScreenshot-0.png
+
+http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkinScreenshot-1.png
 
 =使用方法=
 
