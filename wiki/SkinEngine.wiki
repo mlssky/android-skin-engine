@@ -68,7 +68,8 @@ SkinEngine.getInstance().setSkinApk(apkPath);
 
 *相关方法的说明见文档[http://android-skin-engine.googlecode.com/files/doc.7z doc]*
 
+
 =后续将会完善=
-1、支持的style property完善补全。（目前只支持以下属性View的background，TextView的textColor、textSize、button，ListView的divider、listSelector，ImageView的src。）
+1、支持的style property完善补全。（目前只支持以下属性View的background，`TextView`的textColor、textSize、button，`ListView`的divider、listSelector，`ImageView`的src。）
 2、考虑支持自定义控件的方案。
 3、支持代码动态添加换肤的“控件-属性-资源标识”。
