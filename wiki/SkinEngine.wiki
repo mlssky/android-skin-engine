@@ -32,7 +32,7 @@ http://android-skin-engine.googlecode.com/files/SkinEngineDemoScreenshot-1.png
 
 2、编写皮肤资源包程序，把皮肤资源按照正常android应用程序结构组织。主程序将主题中定义的样式属性名字为映射依据，找到皮肤资源程序里的主题中定义样式属性的值，作为替换皮肤资源。
 
-3、主程序引用皮肤引擎库skin.jar。
+3、主程序引用皮肤引擎库[http://android-skin-engine.googlecode.com/files/SkinEngine.jar SkinEngine.jar]。
 
 4、在主程序启动时（一般是在Application子类里），初始化皮肤引擎SkinEngine。如果主程序主题里定义了控件的默认样式，并且这些默认样式的property有被赋值为style attributes的，则需要调用addWidgetDefaultStyleAttr函数告知皮肤引擎。
 
