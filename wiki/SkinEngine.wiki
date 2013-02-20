@@ -9,8 +9,8 @@ SkinEngine项目的目标是开发一个简单易用的皮肤引擎，让android
 另外，SkinEngine支持运行时动态换肤。
 
 =示例程序=
-请先下载示例程序[http://android-skin-engine.googlecode.com/files/SkinEngineDemo-2.7z SkinEngineDemo]及其皮肤资源包程序[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin-2.7z SkinEngineDemoSkin]。
-[http://android-skin-engine.googlecode.com/files/SkinEngineDemo-2.7z SkinEngineDemo]是一个简单的应用程序，使用了SkinEngine皮肤引擎库。[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin-2.7z SkinEngineDemoSkin]是它的皮肤工程，皮肤资源打包在`SkinEngineDemoSkin.apk`中。
+请先下载示例程序[http://android-skin-engine.googlecode.com/files/SkinEngineDemo-2.7z SkinEngineDemo]及其皮肤资源包程序[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin.7z SkinEngineDemoSkin]。
+[http://android-skin-engine.googlecode.com/files/SkinEngineDemo-2.7z SkinEngineDemo]是一个简单的应用程序，使用了SkinEngine皮肤引擎库。[http://android-skin-engine.googlecode.com/files/SkinEngineDemoSkin.7z SkinEngineDemoSkin]是它的皮肤工程，皮肤资源打包在`SkinEngineDemoSkin.apk`中。
 
 1、将编译打包好的皮肤资源包`SkinEngineDemoSkin.apk`放在`“/mnt/sdcard/SkinEngineDemo/”`目录下，无需安装。
 
