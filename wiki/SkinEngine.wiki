@@ -102,3 +102,5 @@ SkinEngine提供了getColor和getDrawable方法，可以获取样式属性指向
 		if (drawable != null)
 			findViewById(R.id.tv).setBackgroundDrawable(drawable);
 }}}
+
+*相关方法的说明见文档[http://android-skin-engine.googlecode.com/files/SkinEngineDoc-2.7z doc]*
