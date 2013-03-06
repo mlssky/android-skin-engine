@@ -75,8 +75,30 @@ SkinEngine.getInstance().setSkinApk(apkPath);
 
 
 =高级用法=
-1、支持程序动态设置控件和关联皮肤资源。
+1、动态添加换肤控件（属性）。
 
-2、支持自定义控件换肤。
+通过SkinWrapperActivity提供的addSkinItem方法，可以在代码里动态地添加换肤控件和属性。例如
 
-（未完待续）
+{{{
+		// Dynamically add skin item to the skin engine
+		addSkinItem(tv, "textColor", R.attr.textColorTheme);
+}}}
+
+2、获取样式属性关联的资源。
+
+SkinEngine提供了getColor和getDrawable方法，可以获取样式属性指向的资源值（优先级：当前应用的皮肤包>主程序）。例如
+
+{{{
+		// Dynamically retrieve theme resource
+		try {
+			int color = SkinEngine.getInstance().getColor(R.attr.textColorTheme);
+			tv.setTextColor(color);
+		} catch (Exception e) {
+			// can not resolve the desired color value by the attribute
+		}
+
+		// dynamically retrieve theme resource
+		Drawable drawable = SkinEngine.getInstance().getDrawable(R.attr.attrIconCall);
+		if (drawable != null)
+			findViewById(R.id.tv).setBackgroundDrawable(drawable);
+}}}
