@@ -1,0 +1,3 @@
+The android development framework enables the user application to change their appearance by introducing the concept "theme". However, in order to take effect, the theme should be set before the the activity creates. Additionally, all the resources of different themes should be compiled into the application package, which greatly increases the size of the apk.
+
+This project provides you a skin engine library that makes it easy to change your application's skin in run time and much more important, automatically applies skin resources from outside your apk.
